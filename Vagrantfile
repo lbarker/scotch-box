@@ -11,7 +11,7 @@ Vagrant.configure("2") do |config|
 
 	# SETUP - MOUNT POINTS
 
-		# mount xyz_vagrant_box directory for provisioning purposes
+		# mount vagrant_box directory for provisioning purposes
 		config.vm.synced_folder ".", "/var/www/scotch_vagrant_box", :mount_options => ["dmode=777", "fmode=666"]
 
 		# mount directory containing personal sites
